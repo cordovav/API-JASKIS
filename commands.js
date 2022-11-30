@@ -141,6 +141,17 @@ db.bounties.find({captured: false},{client:false})
 db.bounties.find( { species: "Groundhog" }, { location: "Woodlands" })
 { _id: ObjectId("6386bd4986f9cc175d450908"),
   location: 'Woodlands' }
+  
+//__
+
+  db.bounties.find({
+    $and: [
+      { species: { $eq: "Groundhog" } },
+      { location: { $eq: "Woodlands" } }
+      ]
+    
+  })
+
 // Update and Delete
 // 1. Update the reward for Polarwind to 10000
 
