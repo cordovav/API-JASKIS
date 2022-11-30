@@ -3,10 +3,10 @@
 
 // GETTING STARTED
 // 1. Create a database called jaskis
-
+use jaskis
 
 // 2. Create a collection called bounties
-
+db.createCollection('bounties')
 
 // ADD THE ANIMAL BOUNTIES
 // 1. Insert the given "Thanoceros" bounty object
